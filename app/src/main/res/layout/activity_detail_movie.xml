@@ -1,75 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimaryDark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/detail_movie_padding">
+        android:scrollbars="vertical">
 
-        <ImageView
-            android:id="@+id/iv_detail_movies_poster"
-            android:layout_width="@dimen/detail_movie_poster_width"
-            android:layout_height="@dimen/detail_movie_poster_height"
-            android:paddingRight="15dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"/>
-
-        <TextView
-            android:id="@+id/tv_detail_movies_title"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv_detail_movies_poster"
-            android:paddingTop="@dimen/detail_movie_padding"
-            android:paddingBottom="@dimen/detail_movie_inner_padding"
-            android:textSize="@dimen/detail_movie_title_size"
-            android:textColor="@color/colorTextPrimary"/>
+            android:padding="@dimen/detail_movie_padding">
 
-        <TextView
-            android:id="@+id/tv_release_year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_detail_movies_title"
-            android:layout_toRightOf="@id/iv_detail_movies_poster"
-            android:paddingBottom="@dimen/detail_movie_inner_padding"
-            android:textColor="@color/colorTextDarker"
-            android:textSize="@dimen/detail_movie_year_size" />
+            <ImageView
+                android:id="@+id/iv_detail_movies_poster"
+                android:layout_width="@dimen/detail_movie_poster_width"
+                android:layout_height="@dimen/detail_movie_poster_height"
+                android:paddingRight="@dimen/detail_movie_poster_padding_right"
+                android:paddingLeft="@dimen/detail_movie_poster_padding_left"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"/>
 
-        <TextView
-            android:id="@+id/tv_detail_movies_rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_release_year"
-            android:layout_toRightOf="@id/iv_detail_movies_poster"
-            android:textSize="@dimen/detail_movie_rating_size"
-            android:textColor="@color/colorAccent"
-            android:drawableLeft="@drawable/ic_star_black_14dp"
-            android:drawablePadding="2dp" />
+            <TextView
+                android:id="@+id/tv_detail_movies_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_detail_movies_poster"
+                android:paddingTop="@dimen/detail_movie_padding"
+                android:paddingBottom="@dimen/detail_movie_inner_padding"
+                android:textSize="@dimen/detail_movie_title_size"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="Fifty Shades Darker" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_release_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_detail_movies_title"
+                android:layout_toRightOf="@id/iv_detail_movies_poster"
+                android:paddingBottom="@dimen/detail_movie_inner_padding"
+                android:textColor="@color/colorTextDarker"
+                android:textSize="@dimen/detail_movie_year_size"
+                tools:text="2017"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_overview_label"
-        android:textSize="@dimen/tv_overview_label_size"
-        android:paddingLeft="@dimen/detail_movie_padding"
-        android:paddingRight="@dimen/detail_movie_padding"
-        android:paddingBottom="@dimen/detail_movie_inner_padding"
-        android:textColor="@color/colorAccent" />
+            <TextView
+                android:id="@+id/tv_detail_movies_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_release_year"
+                android:layout_toRightOf="@id/iv_detail_movies_poster"
+                android:textSize="@dimen/detail_movie_rating_size"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_star_black_14dp"
+                android:drawablePadding="2dp"
+                tools:text="10"/>
 
-    <TextView
-        android:id="@+id/tv_overview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/detail_movie_padding"
-        android:paddingRight="@dimen/detail_movie_padding"
-        android:paddingBottom="@dimen/detail_movie_padding"
-        android:textColor="@color/colorTextDark"
-        android:textSize="@dimen/tv_overview_size"
-        android:lineSpacingExtra="@dimen/tv_overview_line_spacing_size" />
+            <TextView
+                android:id="@+id/tv_overview_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_detail_movies_poster"
+                android:paddingTop="@dimen/detail_movie_padding"
+                android:paddingBottom="@dimen/detail_movie_inner_padding"
+                android:text="@string/tv_overview_label"
+                android:textSize="@dimen/tv_overview_label_size"
+                android:textColor="@color/colorAccent" />
 
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_overview_label"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/tv_overview_size"
+                android:lineSpacingExtra="@dimen/tv_overview_line_spacing_size"
+                tools:text='A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.'/>
+
+        </RelativeLayout>
+    </ScrollView>
 </LinearLayout>

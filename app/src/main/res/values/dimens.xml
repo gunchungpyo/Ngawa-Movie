@@ -27,6 +27,8 @@
 
     <dimen name="detail_movie_poster_width">110dp</dimen>
     <dimen name="detail_movie_poster_height">140dp</dimen>
+    <dimen name="detail_movie_poster_padding_left">0dp</dimen>
+    <dimen name="detail_movie_poster_padding_right">15dp</dimen>
 
     <dimen name="detail_movie_title_size">18sp</dimen>
     <dimen name="detail_movie_year_size">12sp</dimen>
