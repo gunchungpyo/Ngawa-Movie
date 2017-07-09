@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tv_error_message_text_size">20sp</dimen>
+    <dimen name="tv_error_message_padding">16dp</dimen>
+
+    <dimen name="pb_loading_height">52dp</dimen>
+    <dimen name="pb_loading_width">52dp</dimen>
+
+    <!-- list item dimen -->
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="card_inner_padding">5dp</dimen>
+
+    <dimen name="movie_poster_height">230dp</dimen>
+    <dimen name="movie_title_size">14sp</dimen>
+
+    <dimen name="movie_rating_size">12sp</dimen>
+
+    <!-- detail movie dimen -->
+    <dimen name="detail_movie_padding">16dp</dimen>
+    <dimen name="detail_movie_inner_padding">5dp</dimen>
+
+    <dimen name="detail_movie_poster_width">110dp</dimen>
+    <dimen name="detail_movie_poster_height">140dp</dimen>
+
+    <dimen name="detail_movie_title_size">18sp</dimen>
+    <dimen name="detail_movie_year_size">12sp</dimen>
+    <dimen name="detail_movie_rating_size">16sp</dimen>
+
+    <dimen name="tv_overview_label_size">16sp</dimen>
+    <dimen name="tv_overview_size">14sp</dimen>
+    <dimen name="tv_overview_line_spacing_size">3.5dp</dimen>
+
+</resources>

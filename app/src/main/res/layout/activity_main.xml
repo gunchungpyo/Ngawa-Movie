@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/tv_error_message_padding"
+        android:text="@string/tv_error_message_text"
+        android:textAlignment="center"
+        android:textSize="@dimen/tv_error_message_text_size"
+        android:textColor="@color/colorTextPrimary"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="@dimen/pb_loading_width"
+        android:layout_height="@dimen/pb_loading_height"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+</FrameLayout>
