@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_detail_review_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="14sp"
+        tools:text="Reno" />
+
+    <TextView
+        android:id="@+id/tv_detail_review_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textColor="@color/colorTextDark"
+        android:maxLines="80"
+        android:lineSpacingExtra="2dp"
+        tools:text="Disney's done a great job with Gaston and The Beast, the two aspects that I always thought would be the most important, and the most difficult, to nail.
+         Final rating:★★★ - I personally recommend you give it a go."/>
+
+</LinearLayout>

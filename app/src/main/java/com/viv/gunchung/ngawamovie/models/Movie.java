@@ -1,4 +1,4 @@
-package com.viv.gunchung.ngawamovie;
+package com.viv.gunchung.ngawamovie.models;
 
 import java.util.Date;
 
@@ -11,6 +11,7 @@ public class Movie {
     private String title;
     private double voteAverage;
     private String posterPath;
+    private String backdropPath;
     private String overview;
     private Date releaseDate;
     private double popularity;
@@ -19,11 +20,12 @@ public class Movie {
 
     }
 
-    public Movie( int id, String title, double voteAverage, String posterPath, String overview, Date releaseDate, double popularity) {
+    public Movie( int id, String title, double voteAverage, String posterPath, String backdropPath, String overview, Date releaseDate, double popularity) {
         this.id = id;
         this.title = title;
         this.voteAverage = voteAverage;
         this.posterPath = posterPath;
+        this.backdropPath = backdropPath;
         this.overview = overview;
         this.releaseDate = releaseDate;
         this.popularity = popularity;
@@ -57,8 +59,16 @@ public class Movie {
         return posterPath;
     }
 
+    public String getBackdropPath() {
+        return backdropPath;
+    }
+
     public void setPosterPath(String posterPath) {
         this.posterPath = posterPath;
+    }
+
+    public void setBackdropPath(String backdropPath) {
+        this.backdropPath = backdropPath;
     }
 
     public String getOverview() {

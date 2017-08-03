@@ -1,4 +1,4 @@
-package com.viv.gunchung.ngawamovie;
+package com.viv.gunchung.ngawamovie.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+import com.viv.gunchung.ngawamovie.R;
+import com.viv.gunchung.ngawamovie.models.Movie;
 import com.viv.gunchung.ngawamovie.utilities.MovieUtils;
 
 import java.util.List;

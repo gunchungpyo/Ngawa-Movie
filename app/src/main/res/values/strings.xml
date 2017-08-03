@@ -3,8 +3,12 @@
 
     <string name="action_most_popular">Sort by Most Popular</string>
     <string name="action_top_rated">Sort by Highest Rated</string>
+    <string name="action_favorite">Favorites</string>
+    <string name="action_setting">Settings</string>
 
     <string name="tv_overview_label">Overview</string>
+    <string name="tv_video_label">Trailers</string>
+    <string name="tv_review_label">Reviews</string>
 
     <string name="tv_error_message_text">
         Unable to process your request
